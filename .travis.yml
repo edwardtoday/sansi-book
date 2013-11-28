@@ -23,4 +23,5 @@ script: sh ci.sh
 env:
   global:
   - GH_REPO="edwardtoday/sansi-book"
-  - secure: "fP6XRBJugRamSih8cBzeOJJokAUzQ8SoBNTwjcBWHngMmxGssqlox9DeXM0nUjxUMpGZZmZbyxNL0atk9N7eFCNHwaTHyS/25tv4PZNgEsjZkS+vZ6iOVarfSuim8UHFlXP+1HysT5KkvkqqWHfZPJqVX4Amwb8QfHBcq2zQTRc="
+  - GH_BRANCH="gh-pages"
+  - secure: "ioF1ED4CQb/GzxwVGh2GpfdZTS6muqmgvNYvBcT2Qa2yg5W+4Yq9BbtOqv9Yww4S6mQmIPwLfWppP7cP/Z4PXMaviuiMLHIvKedsKn8797ZaZJQVNUwrZF4Kl4iH+uMz9hHd1ELzqfpay3JKDVj+z+eAWhlZM3jW8ZnEzyCMAjo="
