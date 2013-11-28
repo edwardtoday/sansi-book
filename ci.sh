@@ -17,10 +17,11 @@ rm gen.log
 
 git config --global user.email "edwardtoday@gmail.com"
 git config --global user.name "Pei Qing 卿培"
-git checkout gh-pages
+git remote add origin $REPO_URL
+git checkout --track -b gh-pages origin/gh-pages
 mv output/site/* ./
 mv output/book.* ./
 git add .
 git commit -m "Update gh-pages after TravisCI build"
-git push $REPO_URL gh-pages --quiet
+git push --quiet origin gh-pages
 
