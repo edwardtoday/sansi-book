@@ -9,7 +9,7 @@ before_install:
   - wget http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz
   - tar -zxvf kindlegen_linux_2.6_i386_v2_9.tar.gz kindlegen
   - sudo mv kindlegen /usr/local/bin/
-  - rm kindlegen_linux_2.6_i386_v2_9.tar.gz kindlegen
+  - rm kindlegen_linux_2.6_i386_v2_9.tar.gz
   - git scribe check
 script: git scribe gen all
 
