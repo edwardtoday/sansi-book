@@ -18,8 +18,8 @@ rm gen.log
 git status
 git branch -v
 git remote -v
-git config user.email ${GIT_EMAIL}
-git config user.name ${GIT_NAME}
+git config --global user.email ${GIT_EMAIL}
+git config --global user.name ${GIT_NAME}
 git remote set-url --push origin $REPO_URL
 git remote set-branches --add origin $GH_BRANCH
 git fetch
