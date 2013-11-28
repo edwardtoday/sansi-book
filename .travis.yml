@@ -7,9 +7,6 @@ rvm:
 branches:
   only:
   - master
-env:
-  global:
-    - secure: "Hh3Hu6bbnu0TwceWvqLChlm7HnLWwX6QEuT7cqC/y7v119D5+j92+uN9c2PemVND/KrnahlnWflejLxyX3INooY90m/IAjIzvVgR3lmFyzNmQGoPmjFLJoOohN1V9oN2uAU0FYocd/O+nwUeuotcunZql7DfOKAzM5gc56jVCdM="
 before_install:
 - gem --version
 - sudo apt-get install asciidoc source-highlight fop
@@ -20,5 +17,10 @@ before_install:
 - gem install -V git-scribe-qp
 - sudo pip install Pygments
 - git scribe check
+before_script:
+- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 script: sh ci.sh
-
+env:
+  global:
+  - GH_REPO="edwardtoday/sansi-book"
+  - secure: "fP6XRBJugRamSih8cBzeOJJokAUzQ8SoBNTwjcBWHngMmxGssqlox9DeXM0nUjxUMpGZZmZbyxNL0atk9N7eFCNHwaTHyS/25tv4PZNgEsjZkS+vZ6iOVarfSuim8UHFlXP+1HysT5KkvkqqWHfZPJqVX4Amwb8QfHBcq2zQTRc="
