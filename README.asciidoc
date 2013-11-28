@@ -1,5 +1,4 @@
-
-= This Book
+== This Book
 
 This book is written using using the git-scribe-qp toolchain, which can be found at:
 
