@@ -10,6 +10,7 @@ branches:
 before_install:
 - gem --version
 - sudo apt-get install asciidoc source-highlight fop
+- sudo apt-get install ttf-wqy-zenhei ttf-wqy-microhei
 - wget http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz
 - tar -zxvf kindlegen_linux_2.6_i386_v2_9.tar.gz kindlegen
 - sudo mv kindlegen /usr/local/bin/
