@@ -15,6 +15,8 @@ checkerror
 
 rm gen.log
 
+git config --global user.email "edwardtoday@gmail.com"
+git config --global user.name "Pei Qing 卿培"
 git checkout gh-pages
 mv output/site/* ./
 mv output/book.* ./
