@@ -32,5 +32,5 @@ mv output/book.* ./
 git add .
 git status
 git commit -m "Update gh-pages after TravisCI build"
-git push origin $GH_BRANCH
+git push -q origin $GH_BRANCH
 
