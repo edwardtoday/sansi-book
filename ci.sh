@@ -1,5 +1,5 @@
 #!/bin/sh
-git scribe gen all > gen.log
+git scribe gen site > gen.log
 # cat gen.log
 
 checkerror(){
@@ -17,7 +17,7 @@ rm gen.log
 
 git config --global user.email "edwardtoday@gmail.com"
 git config --global user.name "Pei Qing 卿培"
-git remote add origin $REPO_URL
+git remote set-url origin $REPO_URL
 git checkout --track -b gh-pages origin/gh-pages
 mv output/site/* ./
 mv output/book.* ./
