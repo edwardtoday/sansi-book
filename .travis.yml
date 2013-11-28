@@ -1,18 +1,24 @@
 language: ruby
 cache:
-  - bundler
-  - apt
+- bundler
+- apt
 rvm:
-  - 2.0.0
+- 2.0.0
+branches:
+  only:
+  - master
+env:
+  global:
+    - secure: "Hh3Hu6bbnu0TwceWvqLChlm7HnLWwX6QEuT7cqC/y7v119D5+j92+uN9c2PemVND/KrnahlnWflejLxyX3INooY90m/IAjIzvVgR3lmFyzNmQGoPmjFLJoOohN1V9oN2uAU0FYocd/O+nwUeuotcunZql7DfOKAzM5gc56jVCdM="
 before_install:
-  - gem --version
-  - sudo apt-get install asciidoc source-highlight fop
-  - wget http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz
-  - tar -zxvf kindlegen_linux_2.6_i386_v2_9.tar.gz kindlegen
-  - sudo mv kindlegen /usr/local/bin/
-  - rm kindlegen_linux_2.6_i386_v2_9.tar.gz
-  - gem install -V git-scribe-qp
-  - sudo pip install Pygments
-  - git scribe check
+- gem --version
+- sudo apt-get install asciidoc source-highlight fop
+- wget http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz
+- tar -zxvf kindlegen_linux_2.6_i386_v2_9.tar.gz kindlegen
+- sudo mv kindlegen /usr/local/bin/
+- rm kindlegen_linux_2.6_i386_v2_9.tar.gz
+- gem install -V git-scribe-qp
+- sudo pip install Pygments
+- git scribe check
 script: sh ci.sh
 
