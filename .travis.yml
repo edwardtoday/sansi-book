@@ -1,4 +1,7 @@
 language: ruby
+cache:
+  - bundler
+  - apt
 rvm:
   - 2.0.0
 before_install:
