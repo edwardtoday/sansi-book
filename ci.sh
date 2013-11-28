@@ -1,5 +1,5 @@
 #!/bin/sh
-git scribe gen site > gen.log
+git scribe gen all > gen.log
 # cat gen.log
 
 checkerror(){
