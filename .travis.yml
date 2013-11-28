@@ -11,5 +11,8 @@ before_install:
   - gem install -V git-scribe-qp
   - sudo pip install Pygments
   - git scribe check
-script: ! git scribe gen all | grep 'error'
+script:
+  - git scribe gen all > gen.log
+  - cat gen.log
+  - ! grep -i 'error' gen.log
 
