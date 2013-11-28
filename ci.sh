@@ -13,3 +13,14 @@ checkerror(){
 
 checkerror
 
+rm gen.log
+
+export REPO="$(pwd | sed s,^/home/travis/builds/,,g)"
+ssh -o StrictHostKeyChecking=no
+git checkout gh-pages
+mv output/site/* ./
+mv output/book.* ./
+git add .
+git commit -m "Update gh-pages after TravisCI build"
+git push https://$(GH_USER):$(GH_PASSWORD)@github.com/${REPO} gh-pages
+
