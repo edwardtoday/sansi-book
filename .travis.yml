@@ -9,7 +9,7 @@ before_install:
   - sudo mv kindlegen /usr/local/bin/
   - rm kindlegen_linux_2.6_i386_v2_9.tar.gz
   - gem install -V git-scribe-qp
-  - pip install Pygments
+  - sudo pip install Pygments
   - git scribe check
-script: git scribe gen all
+script: ! git scribe gen all | grep 'error'
 
