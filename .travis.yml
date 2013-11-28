@@ -1,8 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-env:
-  - "git-scribe-qp"
 before_install:
   - gem --version
   - sudo apt-get install asciidoc source-highlight fop
@@ -10,6 +8,7 @@ before_install:
   - tar -zxvf kindlegen_linux_2.6_i386_v2_9.tar.gz kindlegen
   - sudo mv kindlegen /usr/local/bin/
   - rm kindlegen_linux_2.6_i386_v2_9.tar.gz
+  - gem install -V git-scribe-qp
   - git scribe check
 script: git scribe gen all
 
