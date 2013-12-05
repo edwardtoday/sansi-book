@@ -23,4 +23,4 @@ env:
   global:
   - GH_REPO="edwardtoday/sansi-book"
   - GH_BRANCH="gh-pages"
-  - secure: "ioF1ED4CQb/GzxwVGh2GpfdZTS6muqmgvNYvBcT2Qa2yg5W+4Yq9BbtOqv9Yww4S6mQmIPwLfWppP7cP/Z4PXMaviuiMLHIvKedsKn8797ZaZJQVNUwrZF4Kl4iH+uMz9hHd1ELzqfpay3JKDVj+z+eAWhlZM3jW8ZnEzyCMAjo="
+  - secure: "Ah9GCLuY/OpemhsywbSGYyDT18mQ4mHHhE5wYF/GBthLnqFIUU0GSS2BbVTWeaKpIkemOQz5VnRfLKp+4XKmw7aPA5H0lc4Aolk0M+tKXE0NJudOgumnQq1Tdx9PFtOy3pDBi2t39bMxdhoQxeAKrau8PkyZb75TMiDRvDl8z2E="
