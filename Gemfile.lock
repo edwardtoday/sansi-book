@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    diff-lcs (1.2.5)
+    git-scribe-qp (0.1.1)
+      grit
+      liquid
+      nokogiri
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
+    liquid (2.6.0)
+    mime-types (1.25.1)
+    mini_portile (0.5.2)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    posix-spawn (0.3.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  git-scribe-qp

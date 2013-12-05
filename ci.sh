@@ -1,5 +1,6 @@
 #!/bin/sh
-git scribe gen all > gen.log
+bin/git-scribe check
+bin/git-scribe gen all > gen.log
 # cat gen.log
 
 checkerror(){
@@ -22,8 +23,8 @@ git remote set-branches --add origin $GH_BRANCH
 git fetch
 git checkout -- .
 git checkout --track -b gh-pages origin/gh-pages
-mv output/site/* ./
-mv output/book.* ./
+cp -rf output/site/* ./
+cp -f output/book.* ./
 git add .
 git commit -m "Update gh-pages after TravisCI build"
 git push -q origin $GH_BRANCH
