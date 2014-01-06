@@ -3,5 +3,5 @@ publish:  true
 edition:  0.1
 language: zh-CN
 version:  1.0
-author:   QING Pei
+author:   Pei QING
 cover:    images/cover.jpg
