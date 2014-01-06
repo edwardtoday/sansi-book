@@ -15,6 +15,7 @@ before_install:
 - sudo mv kindlegen /usr/local/bin/
 - rm kindlegen_linux_2.6_i386_v2_9.tar.gz
 - sudo pip install Pygments
+- sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 before_script:
 - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
 bundler_args: --binstubs
