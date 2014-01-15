@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 bin/git-scribe check
 bin/git-scribe gen all > gen.log
 # cat gen.log
