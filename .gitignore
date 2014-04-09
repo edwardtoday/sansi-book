@@ -2,3 +2,6 @@ output/
 bin/
 vendor/
 .bundle/
+node_modules
+.grunt
+/_book/

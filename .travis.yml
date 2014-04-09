@@ -1,25 +1,15 @@
-language: ruby
-cache:
-- bundler
-- apt
-rvm:
-- 2.0.0-p353
+language: node_js
+node_js:
+  - "0.10"
 branches:
   only:
   - master
-before_install:
-- sudo apt-get install asciidoc source-highlight fop
-- sudo apt-get install ttf-wqy-zenhei ttf-wqy-microhei ttf-liberation
-- wget http://kindlegen.s3.amazonaws.com/kindlegen_linux_2.6_i386_v2_9.tar.gz
-- tar -zxvf kindlegen_linux_2.6_i386_v2_9.tar.gz kindlegen
-- sudo mv kindlegen /usr/local/bin/
-- rm kindlegen_linux_2.6_i386_v2_9.tar.gz
-- sudo pip install Pygments
-- sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+before_install: npm install -g grunt-cli
 before_script:
-- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
-bundler_args: --binstubs
-script: sh ci.sh
+  - export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+install: npm install
+before_script: grunt gitbook
+script: grunt publish
 env:
   global:
   - GH_REPO="edwardtoday/sansi-book"

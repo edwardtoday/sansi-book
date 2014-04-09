@@ -1,0 +1,4 @@
+Worklog
+=======
+
+Daily reports.
