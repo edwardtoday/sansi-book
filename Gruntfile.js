@@ -19,7 +19,14 @@ module.exports = function (grunt) {
             options: {
                 base: '.grunt/gitbook'
             },
-            src: ['**']
+            src: ['**'],
+            travis: {
+                options: {
+                    repo: 'https://' + process.env.GH_TOKEN + '@github.com/edwardtoday/sansi-book.git',
+                    silent: true
+                },
+                src: ['**']
+            }
         },
         'clean': {
             files: '.grunt'
