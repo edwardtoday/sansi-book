@@ -18,6 +18,8 @@
     * [Boost](skyeye/use_boost.md)
     * [Serial Port](skyeye/serialport.md)
     * [Run Server on Windows](skyeye/run_server_on_windows.md)
+* [Misc](misc/README.md)
+    * [Convert Microsoft Word HTML to GitHub Flavored Markdown](misc/msword_html_to_md.md)
 * [Work Log](worklog/README.md)
     * [Nov 2013](worklog/201311.md)
     * [Dec 2013](worklog/201312.md)
