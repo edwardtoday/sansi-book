@@ -9,14 +9,6 @@ Reading Raw Images
 
 -   [LibRaw](http://www.libraw.org/) is a library for reading RAW files obtained from digital photo cameras (CRW/CR2, NEF, RAF, DNG, and others) with [C++ API](http://www.libraw.org/docs/API-overview-eng.html).
 
-Here is an example [raw image](https://dl.dropboxusercontent.com/u/5249413/raw/test.cr2). And decoded TIFF images using
-
--   [dcraw](https://dl.dropboxusercontent.com/u/5249413/raw/dcraw.tiff)
-
--   [ImageMagick](https://dl.dropboxusercontent.com/u/5249413/raw/imagemagick.tiff)
-
--   [GraphicsMagick](https://dl.dropboxusercontent.com/u/5249413/raw/graphicsmagick.tiff)
-
 By default, `dcraw` alters the image brightness which we do not expect. Edit: `dcraw` has an option `-W` to disable auto brightening.
 
 GraphicsMagick uses `dcraw` as a delegate. To change the settings, run `gm convert -list delegate` to find the path of your `delegates.mgk`, add options `-6 -W -o 2` to the line for `dcraw` in that file. `-6` for 16-bit depth, `-W` to disable auto brightening and `-o 2` for Adobe RGB color space.
