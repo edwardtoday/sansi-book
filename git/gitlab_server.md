@@ -99,3 +99,22 @@ sudo rm /etc/nginx/sites-enabled/default
 Edit `gitlab/config/gitlab.yml`, set `git:max_size` to preferred size.
 
 Edit `/etc/nginx/sites-available/gitlab`, set `client_max_body_size` to preffered size.
+
+Upgrade GitLab
+--------------
+
+Update gitlab-shell:
+
+```bash
+cd /home/git/gitlab-shell
+sudo -u git -H git fetch
+sudo -u git -H git checkout v1.9.6
+```
+
+Update gitlab:
+
+```bash
+cd /home/git/gitlab; sudo -u git -H bundle exec rake gitlab:backup:create RAILS_ENV=production; \
+  sudo service gitlab stop; sudo -u git -H ruby script/upgrade.rb -y; sudo service gitlab start; \
+  sudo service nginx restart; sudo -u git -H bundle exec rake gitlab:check RAILS_ENV=production
+```
