@@ -28,18 +28,10 @@
         "pageNumbers": true,
 
         // Font size for the file content
-        "fontSize": 12,
+        "fontSize": 11,
 
         // Paper size for the pdf
         "paperSize": "a4",
 
-        // Margin (in pts)
-        // Note: 72 pts equals 1 inch
-        "margin": {
-            "right": 62,
-            "left": 62,
-            "top": 36,
-            "bottom": 36
-        }
     }
 }
