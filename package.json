@@ -8,7 +8,9 @@
     },
     "author": "Pei Qing <edwardtoday@gmail.com>",
     "license": "CC-BY-NC-SA",
-    "dependencies": {},
+    "dependencies": {
+        "gitbook-plugin-autocover": "0.0.5"
+        },
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-gitbook": "0.5.6",
