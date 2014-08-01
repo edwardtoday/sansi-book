@@ -33,3 +33,4 @@
     * [May 2014](worklog/201405.md)
     * [Jun 2014](worklog/201406.md)
     * [Jul 2014](worklog/201407.md)
+    * [Aug 2014](worklog/201408.md)
