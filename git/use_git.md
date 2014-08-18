@@ -24,7 +24,7 @@ Git provides a command line interface. If you wish to have a GUI, here are some 
 
 -   [git-cola](http://git-cola.github.com/) *Windows, Mac & Linux*
 
-If you really want to do everything in Visual Studio, Visual Studio has integrated git support. For earlier versions, these extensions may help.
+Visual Studio 2013 has integrated git support. For earlier versions, these extensions may help.
 
 -   [Git Source Control Provider](http://gitscc.codeplex.com/)
 
