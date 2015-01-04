@@ -38,3 +38,4 @@
     * [Oct 2014](worklog/201410.md)
     * [Nov 2014](worklog/201411.md)
     * [Dec 2014](worklog/201412.md)
+    * [Jan 2015](worklog/201501.md)
