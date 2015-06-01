@@ -43,4 +43,5 @@
    * [Mar 2015](worklog/201503.md)
    * [Apr 2015](worklog/201504.md)
    * [May 2015](worklog/201505.md)
+   * Jun 2015
 
