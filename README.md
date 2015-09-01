@@ -9,4 +9,3 @@ You may find it useful to
 
 -   collabrate on my current projects
 
-[![Build Status](https://www.gitbook.io/button/status/book/edwardtoday/sansi_book)](https://www.gitbook.io/book/edwardtoday/sansi_book/activity)
