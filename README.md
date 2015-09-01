@@ -8,4 +8,3 @@ You may find it useful to
 -   review/modify my previous projects
 
 -   collabrate on my current projects
-
