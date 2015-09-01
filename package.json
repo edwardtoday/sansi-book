@@ -7,7 +7,6 @@
         "url": "https://github.com/edwardtoday/sansi-book.git"
     },
     "author": "Pei Qing <edwardtoday@gmail.com>",
-    "license": "CC-BY-NC-SA",
     "dependencies": {
         "gitbook-plugin-autocover": "0.0.5"
         },
