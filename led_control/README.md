@@ -1,4 +1,4 @@
-LED Control
+StarRiver
 ===========
 
-Notes for LED Control project.
+Notes for StarRiver project.
