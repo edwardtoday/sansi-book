@@ -18,7 +18,7 @@
    * [Reading Raw Images](led_calibration/reading_raw_images.md)
    * [Notes](led_calibration/notes.md)
    * [Notes on Poynton](led_calibration/notes_poynton.md)
-* [LED Control](led_control/README.md)
+* [StarRiver](led_control/README.md)
    * [Database Setup](led_control/db_setup.md)
    * [Refresh Brightness](led_control/refresh_brightness.md)
 * [Misc](misc/README.md)
