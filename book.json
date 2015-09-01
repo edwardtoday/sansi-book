@@ -1,7 +1,6 @@
 {
     "plugins": [
         "anchors",
-        "printlinks",
         "richquotesbooster"
     ],
     "pluginsConfig": {}
