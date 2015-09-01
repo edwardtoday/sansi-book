@@ -2,7 +2,6 @@
     "plugins": [
         "anchors",
         "printlinks",
-        "gitbook-plugin-betterchinese",
         "richquotesbooster"
     ],
     "pluginsConfig": {}
