@@ -18,6 +18,21 @@ innodb_force_recovery = 1
 
 执行 `CHECK` 语句，检查各个表看到其中一张表的索引出错了。但根据文档，启用强制修复后，禁止执行 `INSERT, UPDATE, DELETE` 语句。并且我们发现无法删除损坏的表，也无法删除包含这张表的数据库。始终提示数据库处在 readonly 状态。如果此时可以删除表的话，参照[此文](https://www.percona.com/blog/2008/07/04/recovering-innodb-table-corruption/)进行修复即可。
 
+[此文](https://forums.cpanel.net/threads/innodb-corruption-repair-guide.418722/)中详细描述了若干种修复方法，取其中最直接的一种，以及我们最终采用的方法列举如下。
+
+## 正常修复
+
+```
+USE dbname;
+CREATE TABLE tablename_recovered LIKE tablename;
+INSERT INTO tablename_recovered SELECT * FROM tablename;
+DROP dbname.tablename;
+RENAME TABLE dbname.tablename_recovered TO dbname.tablename;
+```
+
+
+## 备份，重装，再导入
+
 唯一一种能够顺利让 MySQL server 顺利启动的方式是，删除包含损毁表的数据库数据文件。此时数据库顺利启动，执行建库脚本不报错。但是查看建好的表，提示表不存在。
 
 最终我们选择删除整个数据目录，重装 MySQL，并从备份导入数据。对于数据量不大的数据库，这或许反而是最快的方法。
