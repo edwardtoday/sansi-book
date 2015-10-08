@@ -46,8 +46,6 @@
    * [May 2015](worklog/201505.md)
    * [Jun 2015](worklog/201506.md)
    * [Jul 2015](worklog/201507.md)
-   * Oct 2015
-   * [Sep 2015](worklog/201509.md)
-       * Oct 2015
    * [Aug 2015](worklog/201508.md)
-
+   * [Sep 2015](worklog/201509.md)
+   * [Oct 2015](worklog/201510.md)
