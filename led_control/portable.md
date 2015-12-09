@@ -4,7 +4,7 @@ Download `mariadb-version-win32.zip` from [https://mariadb.com/my_portal/downloa
 
 Provide a `my.ini` configuration. Depending on the hardware configuration of the server, you may start with the samples `my-small.ini`, `my-medium.ini`, `my-large.ini`, `my-huge.ini` and `my-innodb-heavy-4G.ini`.
 
-Apply the customized configurations to `my.ini` such as encoding settings, turning on events and so on.
+Apply the customized configurations to `my.ini` such as encoding settings, turning on events support and so on.
 
 Running `bin\mysqld.exe` will start a server instance immediately.
 
