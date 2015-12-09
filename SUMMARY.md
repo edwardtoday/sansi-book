@@ -21,6 +21,7 @@
 * [StarRiver](led_control/README.md)
    * [Database Setup](led_control/db_setup.md)
    * [Refresh Brightness](led_control/refresh_brightness.md)
+   * Portable MySQL/MariaDB
 * [Misc](misc/README.md)
    * [Convert Microsoft Word HTML to GitHub Flavored Markdown](misc/msword_html_to_md.md)
    * [MySQL InnoDB Corruption](misc/mysql_innodb_corruption.md)
