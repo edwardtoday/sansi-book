@@ -52,5 +52,5 @@
    * [Oct 2015](worklog/201510.md)
    * [Nov 2015](worklog/201511.md)
    * [Dec 2015](worklog/201512.md)
-   * Jan 2016
+   * [Jan 2016](worklog/201601.md)
 
