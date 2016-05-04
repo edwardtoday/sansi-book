@@ -1,2 +1,2 @@
-# Using GitHub Issues
+# Using GitLab Issues
 
