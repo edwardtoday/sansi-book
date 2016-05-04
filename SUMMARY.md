@@ -5,6 +5,7 @@
    * [Use Git](git/use_git.md)
    * [Setup GitLab Server](git/gitlab_server.md)
    * [Update GitLab Server](git/update_gitlab_server.md)
+   * Using GitHub Issues
 * [SkyEye](skyeye/README.md)
    * [Memo](skyeye/skyeye_memo.md)
    * [Server Setup](skyeye/server_setup.md)
