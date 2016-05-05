@@ -24,6 +24,8 @@
    * [Database Setup](led_control/db_setup.md)
    * [Portable MariaDB](led_control/portable.md)
    * [Refresh Brightness](led_control/refresh_brightness.md)
+* NeoKylin
+   * Installation
 * [Misc](misc/README.md)
    * [Convert Microsoft Word HTML to GitHub Flavored Markdown](misc/msword_html_to_md.md)
    * [MySQL InnoDB Corruption](misc/mysql_innodb_corruption.md)
@@ -59,6 +61,4 @@
    * [Mar 2016](worklog/201603.md)
    * [Apr 2016](worklog/201604.md)
    * [May 2016](worklog/201605.md)
-* NeoKylin
-   * Installation
 
