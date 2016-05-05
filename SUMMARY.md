@@ -29,7 +29,7 @@
 * [Misc](misc/README.md)
    * [Convert Microsoft Word HTML to GitHub Flavored Markdown](misc/msword_html_to_md.md)
    * [MySQL InnoDB Corruption](misc/mysql_innodb_corruption.md)
-   * VirtualBox or VMware
+   * VirtualBox/VMware Workstation Pro comparison
 * [Work Log](worklog/README.md)
    * [Nov 2013](worklog/201311.md)
    * [Dec 2013](worklog/201312.md)
