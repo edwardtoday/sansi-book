@@ -29,6 +29,12 @@ The GUI configuration tool in control panel is useless. Use the following way to
 
 Edit `/etc/sysconfig/network-scripts/ifcfg-eth0`.
 
+Restart the networking interface to let the modified configuration to take effect.
+
+```
+sudo ifdown eth0 && sudo ifup eth0
+```
+
 #### For VirtualBox
 
 ```
