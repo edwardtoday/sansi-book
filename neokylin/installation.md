@@ -25,3 +25,25 @@ Recommended configuration:
 
 The GUI configuration tool in control panel is useless. Use the following way to setup a network connection.
 
+IP configuration:
+
+Edit `/etc/sysconfig/network-scripts/ifcfg-eth0`.
+
+For Virtualbox:
+
+```
+DEVICE="eth0"
+HWADDR="xx:xx:xx:xx:xx:xx"
+NM_CONTROLLED="yes"
+ONBOOT="yes"
+BOOTPROTO=static
+IPADDR=10.0.2.100
+GATEWAY=10.0.2.2
+NETMASK=255.255.255.0
+```
+
+For VMware:
+
+Replace `IPADDR` and `GATEWAY` to what you find in host NIC information.
+
+![](neokylin-network-vmware.PNG)
