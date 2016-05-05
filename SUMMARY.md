@@ -60,4 +60,5 @@
    * [Apr 2016](worklog/201604.md)
    * [May 2016](worklog/201605.md)
 * NeoKylin
+   * Installation
 
