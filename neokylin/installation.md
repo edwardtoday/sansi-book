@@ -42,8 +42,24 @@ GATEWAY=10.0.2.2
 NETMASK=255.255.255.0
 ```
 
+`HWADDR` should be there by default. You do not need to change the detected value.
+
 For VMware:
 
-Replace `IPADDR` and `GATEWAY` to what you find in host NIC information.
+Replace `IPADDR` and `GATEWAY` to what you find in host NIC information. For example, when you see the following configuration for your host NIC.
 
 ![](neokylin-network-vmware.PNG)
+
+You should set the VM guest configuration to
+
+```
+```
+DEVICE="eth0"
+HWADDR="xx:xx:xx:xx:xx:xx"
+NM_CONTROLLED="yes"
+ONBOOT="yes"
+BOOTPROTO=static
+IPADDR=192.168.227.100
+GATEWAY=192.168.227.2
+NETMASK=255.255.255.0
+```
