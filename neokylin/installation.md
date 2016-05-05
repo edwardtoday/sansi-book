@@ -1,4 +1,4 @@
-el# Installation
+# Installation
 
 A virtual machine is recommended for Qt development under NeoKylin.
 
@@ -25,11 +25,11 @@ Recommended configuration:
 
 The GUI configuration tool in control panel is useless. Use the following way to setup a network connection.
 
-IP configuration:
+### IP configuration
 
 Edit `/etc/sysconfig/network-scripts/ifcfg-eth0`.
 
-For Virtualbox:
+#### For Virtualbox
 
 ```
 DEVICE="eth0"
@@ -44,7 +44,10 @@ NETMASK=255.255.255.0
 
 `HWADDR` should be there by default. You do not need to change the detected value.
 
-For VMware:
+The default IPv4 range `10.0.x.0/24` comes from Virtualbox documentation. Refer to [online doc](https://www.virtualbox.org/manual/ch09.html#idp46691721314736) for more details.
+
+
+#### For VMware
 
 Replace `IPADDR` and `GATEWAY` to what you find in host NIC information. For example, when you see the following configuration for your host NIC.
 
@@ -52,7 +55,6 @@ Replace `IPADDR` and `GATEWAY` to what you find in host NIC information. For exa
 
 You should set the VM guest configuration to
 
-```
 ```
 DEVICE="eth0"
 HWADDR="xx:xx:xx:xx:xx:xx"
