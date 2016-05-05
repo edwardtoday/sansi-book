@@ -2,9 +2,9 @@
 
 A virtual machine is recommended for Qt development under NeoKylin.
 
-You could use [Virtualbox](https://www.virtualbox.org/) (free and open-source) or [VMware Workstation Pro](http://www.vmware.com/products/workstation/workstation-evaluation) (proprietary) as VM host.
+You could use [VirtualBox](https://www.virtualbox.org/) (free and open-source) or [VMware Workstation Pro](http://www.vmware.com/products/workstation/workstation-evaluation) (proprietary) as VM host. They are available locally at `\\202.11.4.65\yf1\Software\VirtualBox` and `\\202.11.4.65\yf1\Software\VMware Workstation\`.
 
-The system installation image can be found at `\\202.11.4.65\OS\NeoKylin\`.
+The system installation image can be found at `\\202.11.4.65\yf1\OS\NeoKylin\`.
 
 Recommended configuration:
 
@@ -29,7 +29,7 @@ The GUI configuration tool in control panel is useless. Use the following way to
 
 Edit `/etc/sysconfig/network-scripts/ifcfg-eth0`.
 
-#### For Virtualbox
+#### For VirtualBox
 
 ```
 DEVICE="eth0"
