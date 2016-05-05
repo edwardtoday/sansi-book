@@ -65,3 +65,13 @@ IPADDR=192.168.227.100
 GATEWAY=192.168.227.2
 NETMASK=255.255.255.0
 ```
+
+### DNS configuration
+
+Add nameservers in `/etc/resolve.conf`.
+
+E.g.
+```
+nameserver 223.5.5.5
+nameserver 223.6.6.6
+```
