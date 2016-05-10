@@ -7,6 +7,7 @@
   1. If there is not already an "Advanced" button in its toolbar (on top, alongside "Default", "Fax", "IP", etc.), you'll need to customize the toolbar. Control+click on the toolbar area and select "Customize Toolbar...".
   2. Drag the "Advanced" item up onto the toolbar and click "Done".
 5. Click on the "Advanced" button.
+  - If the elements are grayed out, you may need to [reset the printing system](https://support.apple.com/en-us/HT201539).
 6. Then enter/select the following:
   - Type: "Windows printer via spoolss"
   - Device: "Another Device"
