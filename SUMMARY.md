@@ -30,6 +30,7 @@
    * [Convert Microsoft Word HTML to GitHub Flavored Markdown](misc/msword_html_to_md.md)
    * [MySQL InnoDB Corruption](misc/mysql_innodb_corruption.md)
    * [VirtualBox/VMware Workstation Pro comparison](misc/virtualbox_vmware_workstation_pro_comparison.md)
+   * Print with a Mac
 * [Work Log](worklog/README.md)
    * [Nov 2013](worklog/201311.md)
    * [Dec 2013](worklog/201312.md)
