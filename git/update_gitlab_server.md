@@ -6,6 +6,7 @@ Download the deb and install with `dpkg`. The following example downloads gitlab
 
 ```bash
 wget https://packages.gitlab.com/gitlab/gitlab-ce/ubuntu/pool/trusty/main/g/gitlab-ce/gitlab-ce_8.6.7-ce.0_amd64.deb
+sudo chown -R git $path-to-gitlab-backup
 sudo dpkg -i gitlab-ce_8.6.7-ce.0_amd64.deb
 ```
 
