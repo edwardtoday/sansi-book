@@ -11,7 +11,7 @@
 6. Then enter/select the following:
   - Type: "Windows printer via spoolss"
   - Device: "Another Device"
-  - URL: `smb://202.11.4.21/%e7%a0%94%e5%8f%91%e4%b8%80%e9%83%a85200`
-  - Name: "研发一部5200"
+  - URL: `smb://202.11.4.21/%e7%a0%94%e5%8f%91%e4%b8%80%e9%83%a8-hpm701`
+  - Name: "研发一部-hpm701"
   - Location: "4F"
   - Use: Select "Select Software..." then choose "HP LaserJet Series PCL 4/5".
