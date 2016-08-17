@@ -31,6 +31,7 @@
    * [MySQL InnoDB Corruption](misc/mysql_innodb_corruption.md)
    * [VirtualBox/VMware Workstation Pro comparison](misc/virtualbox_vmware_workstation_pro_comparison.md)
    * [Print with a Mac](misc/print_with_a_mac.md)
+   * Quickly Create an HTTP Server at Current Dir
 * [Work Log](worklog/README.md)
    * [Nov 2013](worklog/201311.md)
    * [Dec 2013](worklog/201312.md)
