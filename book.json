@@ -1,7 +1,8 @@
 {
     "plugins": [
         "anchors",
-        "autocover"
+        "autocover",
+        "betterchinese"
     ],
     "pluginsConfig": {}
 }
