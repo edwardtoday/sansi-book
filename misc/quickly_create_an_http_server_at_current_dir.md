@@ -1,4 +1,4 @@
-# Quickly Create an HTTP Server at Current Dir
+# Create an HTTP Server at Current Dir
 
 ## Windows
 
