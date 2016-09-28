@@ -11,7 +11,8 @@
 6. Then enter/select the following:
   - Type: "Windows printer via spoolss"
   - Device: "Another Device"
-  - URL: `smb://202.11.4.21/%e7%a0%94%e5%8f%91%e4%b8%80%e9%83%a8-hpm701`
-  - Name: "研发一部-hpm701"
+  - URL: `smb://192.168.4.14/%E7%A0%94%E5%8F%91%E4%B8%80%E9%83%A8-HP+LaserJet+Pro+M701+PCL+6`
+  - The URL should be encoded with <http://www.url-encode-decode.com/>
+  - Name: "研发一部-HP LaserJet Pro M701 PCL 6"
   - Location: "4F"
   - Use: Select "Select Software..." then choose "HP LaserJet Pro M701".
