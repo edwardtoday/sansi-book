@@ -12,14 +12,14 @@ The server shall be configured to use a static IP address. Find out what interfa
 
 Change
 
-~~~~ {.bash}
+```bash
 auto eth0
 iface eth0 inet dhcp
-~~~~
+```
 
 to
 
-~~~~ {.bash}
+```bash
 auto eth0
 iface eth0 inet static
     address 202.11.11.201
@@ -28,7 +28,7 @@ iface eth0 inet static
     broadcast 202.11.255.255
     gateway 202.11.0.2
     dns-nameservers 202.96.209.5 202.96.209.133
-~~~~
+```
 
 SSH Server
 ----------
@@ -37,7 +37,7 @@ Edit `/etc/ssh/sshd_config` to allow remote login over ssh.
 
 Generate a pair of public/private keys on the client machine. Then upload to server for public key authenticaiton.
 
-~~~~ {.bash}
+```bash
 # on client side
 ssh-keygen -t rsa
 cd ~/.ssh
@@ -54,34 +54,34 @@ exit
 
 # on client side, this time it won't prompt for password
 ssh qingpei@202.11.11.201
-~~~~
+```
 
 IPTABLES
 --------
 
 Remember to allow incoming tcp connections on port 22 in **iptables**.
 
-~~~~ {.bash}
+```bash
 sudo iptables -A INPUT -p tcp -dport ssh -j ACCEPT
 sudo iptables -A INPUT -p tcp -dport 80 -j ACCEPT
 sudo iptables -I INPUT 1 -i lo -j ACCEPT
-~~~~
+```
 
 Save the configuration
 
-~~~~ {.bash}
+```bash
 sudo iptables-save > /etc/iptables.rules
-~~~~
+```
 
 Configuration on startup. Edit `/etc/network/interfaces`
 
-~~~~ {.bash}
+```bash
 # add lines after the interface settings like
 #auot eth0
 #iface eth0 inet dhcp
   pre-up iptables-restore < /etc/iptables.rules
   post-down iptables-save > /etc/iptables.rules
-~~~~
+```
 
 GitLab Installation
 -------------------
@@ -90,9 +90,9 @@ Please refer to <https://github.com/gitlabhq/gitlabhq/blob/master/doc/install/in
 
 I run the following command to make nginx start without errors.
 
-~~~~ {.bash}
+```bash
 sudo rm /etc/nginx/sites-enabled/default
-~~~~
+```
 
 ### Commit Size Limit
 

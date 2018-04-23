@@ -3,51 +3,51 @@ Setup NFS Server on Fedora 19
 
 First, install `nfs-utils`.
 
-~~~~ {.bash}
+```bash
 yum -y install nfs-utils
-~~~~
+```
 
 Configure domain name.
 
-~~~~ {.bash}
+```bash
 emacs /etc/idmapd.conf
-~~~~
+```
 
 Create a shared folder.
 
-~~~~ {.bash}
+```bash
 mkdir /shared
 mkdir /shared/skyeye
 chmod 777 /shared/skyeye
 chown -R nfsnobody /shared/skyeye
 chgrp -R nfsnobody /shared/skyeye
-~~~~
+```
 
 Access control.
 
-~~~~ {.bash}
+```bash
 emacs /etc/exports
 # add a line
 # /shared/skyeye 202.11.0.0/16(rw,sync)
-~~~~
+```
 
 Start nfs services.
 
-~~~~ {.bash}
+```bash
 systemctl start nfs-server.service
 systemctl start nfs-lock.service
 systemctl start rpc-bind.service
 systemctl start nfs-idmap.service
-~~~~
+```
 
 Enable services at startup.
 
-~~~~ {.bash}
+```bash
 systemctl enable nfs-server.service
 systemctl enable nfs-lock.service
 systemctl enable rpc-bind.service
 systemctl enable nfs-idmap.service
-~~~~
+```
 
 Allow NFS services through firewall.
 
@@ -72,13 +72,13 @@ Open a command prompt with `Win + R` running `cmd`.
 
 Use the following command to mount.
 
-~~~~ {.bash}
+```bash
 mount -o fileaccess=4 202.11.12.186:/shared/skyeye N:
 # this mounts the shared folder to N: drive.
-~~~~
+```
 
 To unmount
 
-~~~~ {.bat}
+```bat
 umount N:
-~~~~
+```

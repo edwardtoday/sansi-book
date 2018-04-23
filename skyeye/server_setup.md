@@ -4,9 +4,9 @@
 Database
 --------
 
-~~~~ {.bash}
+```bash
 mysql -h localhost -u root -p
-~~~~
+```
 
 -   Create Database, User and Enable Remote Connections to Database
 
@@ -22,7 +22,7 @@ The example uses following parameters:
 
 -   PERMISSIONS = ALL
 
-~~~~ {.sql}
+```sql
 ## CREATE DATABASE ##
 MariaDB [(none)]> CREATE DATABASE skyeye_db;
 Query OK, 1 row affected (0.00 sec)
@@ -39,28 +39,28 @@ Query OK, 0 rows affected (0.02 sec)
 ##  FLUSH PRIVILEGES, Tell the server TO reload the GRANT TABLES  ##
 MariaDB [(none)]> FLUSH PRIVILEGES;
 Query OK, 0 rows affected (0.00 sec)
-~~~~
+```
 
 -   Enable Remote Connection to MariaDB Server
 
 Open MySQL port (3306) on firewall.
 
-~~~~ {.bash}
+```bash
 firewall-cmd --permanent --zone=public --add-port=3306/tcp
-~~~~
+```
 
 Test remote conntection
 
-~~~~ {.bash}
+```bash
 mysql -h server-ip -u skyeye_admin -p skyeye_db
-~~~~
+```
 
 数据库编码设定
 --------------
 
 因为要支持中文，所以需要改变数据库的默认编码。
 
-~~~~ {.bash}
+```bash
  mysql -h localhost -u root -p skyeye_db
 
 MariaDB [skyeye_db]> SET GLOBAL character_set_server = 'utf8';
@@ -77,16 +77,16 @@ Query OK, 0 rows affected (0.00 sec)
 
 MariaDB [skyeye_db]> SET character_set_database = 'utf8';
 Query OK, 0 rows affected (0.00 sec)
-~~~~
+```
 
 Timezone
 --------
 
 Change timezone to Asia/Shanghai.
 
-~~~~ {.bash}
+```bash
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-~~~~
+```
 
 Max Open Files
 --------------
@@ -95,9 +95,9 @@ Every open socket is an open file. There is a limit of max open files per proces
 
 To check the current limit, run
 
-~~~~ {.bash}
+```bash
 ulimit -a
-~~~~
+```
 
 To change the limit,
 
@@ -106,5 +106,3 @@ To change the limit,
 -   Edit `/etc/security/limits.conf`: add line `* - nofile 65536`
 
 -   Restart
-
-

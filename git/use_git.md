@@ -36,19 +36,19 @@ First-Time Git Setup
 *Your Identity*.
 Git stores your identity with every commit you make. To tell Git who you are, run
 
-~~~~ {.bash}
+```bash
 git config --global user.name "John Doe"
 git config --global user.email "johndoe@example.com"
-~~~~
+```
 
 You only need to do this once. With the `--global` option, the information is stored in `~/.gitconfig`, which is your user-specific git configuration file.
 
 *Your Editor*.
 There are times when Git needs you to type in a message. E.g. when you commit your changes without an inline `-m "your commit message" option`. By default, Git uses the system’s default editor, which is usually Vi. To change the editor, you can do:
 
-~~~~ {.bash}
+```bash
 git config --global core.editor emacs
-~~~~
+```
 
 The annoying fact that Windows and Linux line endings are differnt sometimes messes things up. It would be better if the repository have only `LF`. When files are checkout on Windows, line endings are automatically replaced with `CRLF`. On Linux, line endings does not change.
 
@@ -56,15 +56,15 @@ To achive this you need the following configurations.
 
 On Windows, run
 
-~~~~ {.bash}
+```bash
 git config --global core.autocrlf true
-~~~~
+```
 
 On Linux/Mac, run
 
-~~~~ {.bash}
+```bash
 git config --global core.autocrlf input
-~~~~
+```
 
 For finer control over line endings per project, you probably need a [.gitattributes file](https://help.github.com/articles/dealing-with-line-endings#per-repository-settings).
 
@@ -73,18 +73,18 @@ Create a Git Repository
 
 In the project root directory (or create an empty directory for a new project), run
 
-~~~~ {.bash}
+```bash
 git init
-~~~~
+```
 
 Clone a Existing Repository
 ---------------------------
 
 To work on an existing project managed with Git, you’ll first get a working copy locally with
 
-~~~~ {.bash}
+```bash
 git clone /path/to/repository
-~~~~
+```
 
 Suppose your curreny working directory is `~/workspace/`, running `git clone https://github.com/edwardtoday/git-example.git` will download the project (including its whole history) to `~/workspace/git-example/`.
 
@@ -93,15 +93,15 @@ Commit files
 
 To commit a changed file, whether it’s newly created or edited, you add it to the **Index** using
 
-~~~~ {.bash}
+```bash
 git add <filename>
-~~~~
+```
 
 To commit the changes currently in the **Index**, run
 
-~~~~ {.bash}
+```bash
 git commit -m "Commit message describing the changes"
-~~~~
+```
 
 Now the changes has been commit to HEAD of your local repository.
 
@@ -111,25 +111,25 @@ Sync with Remotes
 *Add Remotes*.
 To get changes from a remote server to your local repository, you need to add that remote server with
 
-~~~~ {.bash}
+```bash
 git remote add <remote name> <server>
-~~~~
+```
 
 If the local repository was cloned from a remote server, that server has already been added as a remote called *origin*.
 
 To list all the remotes currently added, run
 
-~~~~ {.bash}
+```bash
 git remote -v
-~~~~
+```
 
 1.  Push Changes to Remotes
 
 You have finished a feature/function/bugfix/… and you want publish your local commits to a remote server. Run
 
-~~~~ {.bash}
+```bash
 git push <remote name> <branch>
-~~~~
+```
 
 So far, `<branch>` is normally `master`.
 
@@ -137,9 +137,9 @@ So far, `<branch>` is normally `master`.
 
 You also wish to get the code written by others into your local repository. Run
 
-~~~~ {.bash}
+```bash
 git pull <remote name> <branch>
-~~~~
+```
 
 Useful Links
 ------------
@@ -157,5 +157,3 @@ Useful Links
 -   [GitHub Help](https://help.github.com/)
 
 -   [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html) [中文翻译](http://marklodato.github.io/visual-git-guide/index-zh-cn.html)
-
-

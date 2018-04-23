@@ -8,9 +8,9 @@ gphoto2
 
 Installation under Ubuntu is simple:
 
-~~~~ {.bash}
+```bash
 apt-get install gphoto2 libgphoto2-6 libgphoto2-6-dev
-~~~~
+```
 
 ### (Optional) Install From Source
 
@@ -27,9 +27,9 @@ Connect your camera through USB. Unmount the device if it is automatially mounte
 
 Check if gphoto2 detects the camera.
 
-~~~~ {.bash}
+```bash
 gphoto2 --auto-detect
-~~~~
+```
 
 You should see output like the following if `gphoto2` detected the camera.
 
@@ -39,9 +39,9 @@ You should see output like the following if `gphoto2` detected the camera.
 
 Check the capabilities of the camera.
 
-~~~~ {.bash}
+```bash
 gphoto2 --summary
-~~~~
+```
 
 Here is a summary of Canon EOS 7D.
 
@@ -78,9 +78,9 @@ Here is a summary of Canon EOS 7D.
 
 Capture an image (if the camera reported image capture support in the summary output.)
 
-~~~~ {.bash}
+```bash
 gphoto2 --capture-image
-~~~~
+```
 
 The camera will focus (if not set to manual focus), take a picture and show the file locations on camera.
 

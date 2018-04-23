@@ -5,22 +5,22 @@ Serial ports in linux can be found at `/dev/ttyS[0123]`. (USB to Serial converte
 
 To know which serial port is enabled, run:
 
-~~~~ {.bash}
+```bash
 dmesg | grep tty
-~~~~
+```
 
 and you might see something like:
 
-~~~~ {.bash}
+```bash
 [    0.000000] console [tty0] enabled
 [    0.567116] 00:04: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
-~~~~
+```
 
 As shown, `ttyS0` is available on this system. To show information about this serial port, run:
 
-~~~~ {.bash}
+```bash
 stty -F /dev/ttyS0 -a # you may need root previlidge
-~~~~
+```
 
 An example of infomation shown could be
 
@@ -37,7 +37,7 @@ An example of infomation shown could be
 
 To interact with a serial port, you may use BoostAsio as well.
 
-~~~~ {.c++}
+```cpp
 #include <boost/asio.hpp>
 #include <boost/asio/serial_port.hpp>
 
@@ -48,7 +48,7 @@ sp.set_option(boost::asio::serial_port::flow_control(flow_control::none));
 sp.set_option(boost::asio::serial_port::parity(parity::none));
 sp.set_option(boost::asio::serial_port::stop_bits(stop_bits::one));
 sp.set_option(boost::asio::serial_port::character_size(8));
-~~~~
+```
 
 Then you can use `(async_)read()`, `(async_)write()` to read/write from/to the serial port. Or you can call the port’s member function `(async_)read_some()` and `(async_)write_some()` to read/write some data from/to the port just like network sockets.
 
@@ -61,20 +61,20 @@ The tty devices belong to the "dialout" group. You are not a member of this grou
 
 First check if you are a member of that group:
 
-~~~~ {.bash}
+```bash
 groups ${USER}
-~~~~
+```
 
 And you get output like:
 
-~~~~ {.bash}
+```bash
 qingpei : qingpei wheel
-~~~~
+```
 
 If you don’t belong to the dialout group, add yourself to it:
 
-~~~~ {.bash}
+```bash
 sudo gpasswd --add ${USER} dialout
-~~~~
+```
 
 You need to log out and log back in for it to take effect.

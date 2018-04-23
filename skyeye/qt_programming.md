@@ -8,11 +8,11 @@ Download Qt from its [download page](http://qt-project.org/downloads).
 
 The current version is `Qt 5.2`.
 
-~~~~ {.bash}
+```bash
 wget http://download.qt-project.org/official_releases/qt/5.2/5.2.0/qt-linux-opensource-5.2.0-x86_64-offline.run
 chmod +x qt-linux-opensource-5.2.0-x86_64-offline.run
 ./qt-linux-opensource-5.2.0-x86_64-offline.run
-~~~~
+```
 
 Connect to MySQL databases
 --------------------------
@@ -31,13 +31,13 @@ The following assumes Qt and MySQL are installed to these paths:
 
 Open a terminal and build the driver:
 
-~~~~ {.bash}
+```bash
 cd ~/Qt5.2.0/5.2.0/Src/qtbase/src/plugins/sqldrivers/mysql
 ~/Qt5.2.0/5.2.0/gcc_64/bin/qmake "INCLUDEPATH+=/usr/include/mysql" \
 "LIBS+=-L/usr/lib64/mysql -lmysqlclient_r" mysql.pro
 make
 make install
-~~~~
+```
 
 Try the `sqlbrowser` example from Qt Creator to check whether the driver is working.
 
