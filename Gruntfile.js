@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 output: path.join(__dirname, ".grunt/gitbook"),
                 input: "./",
                 title: "Sansi book",
-                description: "This work contains all documentation written by Pei Qing while working at Sansi.",
+                description: "This work contains all documentation written by Pei Qing while working at Sansi during 2013-2016.",
                 github: "edwardtoday/sansi-book"
             }
         },
